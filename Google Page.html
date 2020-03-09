@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Google</title>
+        <style>
+            header {
+                display: flex;
+                justify-content: flex-end;      
+                margin-top: 15px;         
+                }
+
+            .top-text {
+                margin: 10;
+                font-size: x-large;
+                text-decoration: none;
+            }
+
+            .top-text:hover {
+                text-decoration: dotted black;
+            }
+
+            #tab {
+                width: 28px;
+                margin: auto 30 auto 20;
+            }
+
+            #profile {
+                width: 48px;
+                height: 49.2px;
+                margin: auto 27 auto 0;
+            }
+
+            #logo {
+                display: block;
+                width: 410px;
+                margin: 170 auto 0 auto;
+            }
+
+            #search {
+                display: block;
+                margin: 50 auto;
+                background-color: transparent;
+                border-radius: 100px;
+                height: 70px;
+            }
+
+            #buttons {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 39%;
+            }
+
+            #language {
+                text-align: center;
+                font-size: large;
+            }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #tfooter {
+                display: flex;
+            } 
+
+            #bfooter {
+                display: flex;
+                justify-content: space-between;
+            } 
+
+            #first {
+                display: flex;
+            }
+
+            #second {
+                display: flex;
+            }
+
+            .formation {
+                text-decoration: none;
+                padding: 0 15;
+
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p><a href='' class="top-text">Gmail</a></p>
+            <p><a href='' class="top-text">Images</a></p>
+            <img src="https://cdn.discordapp.com/attachments/440584270763786243/686691841034158130/unknown.png" alt='tab' id="tab">
+            <img src="https://lh3.googleusercontent.com/a-/AOh14Gi6RQw7lpQtkmLVzBIMLoGr93FlT-z_jaMOPFVK=s96-cc-rg" alt="perfil" id="profile">
+        </header> 
+        <div id="content">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" id="logo">
+            <input type="text" id="search" size="100">
+            <div id="buttons">
+                <button type="button" id="bsearch">Google Search</button>
+                <button type="button" id="lucky">I'm Feeling Lucky</button>
+            </div>
+            <p id="language">Google offerend in: <a href=''>Português(Brasil)</a></p>
+        </div>
+        <footer>
+            <div id="tfooter">
+                <p id='country'>Brazil</p><br>
+            </div>
+            <div id="bfooter">
+                <div id="first">
+                    <p><a href='' class="formation">Advertising</a></p>
+                    <p><a href='' class="formation">Business</a></p>
+                    <p><a href='' class="formation">About</a></p>
+                    <p><a href='' class="formation">How Search works</a></p>
+                </div>
+                <div id="second">
+                    <p><a href='' class="formation">Privacy</a></p>
+                    <p><a href='' class="formation">Terms</a></p>
+                    <p><a href='' class="formation">Settings</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
