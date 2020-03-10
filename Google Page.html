@@ -2,6 +2,10 @@
     <head>
         <title>Google</title>
         <style>
+            body {
+                font-family: arial, sans-serif;
+                font-size: 13px;
+            }
             header {
                 display: flex;
                 justify-content: flex-end;      
@@ -10,37 +14,36 @@
 
             .top-text {
                 margin: 10;
-                font-size: x-large;
                 text-decoration: none;
             }
 
             .top-text:hover {
-                text-decoration: dotted black;
+                text-decoration: underline;
             }
 
             #tab {
-                width: 28px;
+                width: 20px;
                 margin: auto 30 auto 20;
             }
 
             #profile {
-                width: 48px;
-                height: 49.2px;
+                width: 32px;
+                height: 33.6px;
                 margin: auto 27 auto 0;
             }
 
             #logo {
                 display: block;
-                width: 410px;
-                margin: 170 auto 0 auto;
+                width: 272px;
+                margin: 100 auto 0 auto;
             }
 
             #search {
                 display: block;
-                margin: 50 auto;
+                margin: 30 auto;
                 background-color: transparent;
                 border-radius: 100px;
-                height: 70px;
+                height: 40px;
             }
 
             #buttons {
@@ -51,21 +54,47 @@
 
             #language {
                 text-align: center;
-                font-size: large;
+                text-decoration: none; 
+            }
+
+            #brasil {
+                text-decoration: none;
+            }
+
+            #brasil:hover {
+                text-decoration: underline;
             }
 
             footer {
-                display: flex;
-                flex-direction: column;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                min-width: 980px;
+                width: 100%;
+                background-color: #f2f2f2;
+                line-height: 19px;
             }
 
             #tfooter {
                 display: flex;
+                border-top: #e4e4e4 solid 1px;
+                padding-left: 30px;
+                font-size: 15px;
+                height: 40px;
+                align-items: center;
             } 
+
+            .country {
+                color: rgba(0, 0, 0, 0.54);
+            }
 
             #bfooter {
                 display: flex;
+                border-top: #e4e4e4 solid 1px;
+                padding: 0 3 0 30;
                 justify-content: space-between;
+                height: 40px;
+                align-items: center;
             } 
 
             #first {
@@ -78,8 +107,12 @@
 
             .formation {
                 text-decoration: none;
-                padding: 0 15;
+                color: #5f6368;
+                padding: 0 27 0 0;
+            }
 
+            .formation:hover {
+                text-decoration: underline;
             }
         </style>
     </head>
@@ -92,16 +125,16 @@
         </header> 
         <div id="content">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" id="logo">
-            <input type="text" id="search" size="100">
+            <input type="text" id="search" size="70">
             <div id="buttons">
                 <button type="button" id="bsearch">Google Search</button>
                 <button type="button" id="lucky">I'm Feeling Lucky</button>
             </div>
-            <p id="language">Google offerend in: <a href=''>Português(Brasil)</a></p>
+            <p id="language">Google offerend in: <a href='' id="brasil">Português(Brasil)</a></p>
         </div>
         <footer>
             <div id="tfooter">
-                <p id='country'>Brazil</p><br>
+                <p class='country'>Brazil</p><br>
             </div>
             <div id="bfooter">
                 <div id="first">
