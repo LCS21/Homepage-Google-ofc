@@ -9,51 +9,117 @@
             header {
                 display: flex;
                 justify-content: flex-end;      
-                margin-top: 15px;         
+                margin: 10 25 0 30;    
+                align-items: center;
+                color: rgba(0, 0, 0, 0.87);
                 }
 
             .top-text {
-                margin: 10;
+                padding-top: 10;
+                margin-right: 15;
                 text-decoration: none;
+                color: rgba(0, 0, 0, 0.877);
             }
 
             .top-text:hover {
                 text-decoration: underline;
+                color: rgba(0, 0, 0, 0.664);
+            }
+
+            .top-text2 {
+                padding-top: 3;
+                margin-right: 22;
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.863);
+            }
+
+            .top-text2:hover {
+                text-decoration: underline;
+                color: rgba(0, 0, 0, 0.658);
             }
 
             #tab {
-                width: 20px;
-                margin: auto 30 auto 20;
+                width: 18px;
+                height: 17.5px;
+                margin: auto 23 auto 0;
             }
 
             #profile {
                 width: 32px;
-                height: 33.6px;
-                margin: auto 27 auto 0;
+                margin: auto -4;
             }
 
             #logo {
                 display: block;
                 width: 272px;
-                margin: 100 auto 0 auto;
+                margin: 105 auto 0 auto;
             }
 
             #search {
                 display: block;
                 margin: 30 auto;
                 background-color: transparent;
+                border: 1px solid #dbdbdb;
                 border-radius: 100px;
-                height: 40px;
+                height: 45px;
+                font-size: 16px;
+            }
+
+            #slogo {
+                width: 15px;
+                position: absolute;
+                top: 294px;
+                left: 32.5%;
             }
 
             #buttons {
                 display: flex;
                 justify-content: space-between;
-                margin: 0 39%;
+                margin: 30px 41%;
+                border-radius: 5px;
+            }
+
+            #bsearch {
+                border: none;
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                color: #5F6368;
+                padding: 8 15;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            #bsearch:hover {
+                border: none;
+                background-color: #f4f4f4;
+                border: 1px solid #c9c9c9;
+                border-radius: 5px;
+                color: black;
+            }
+
+            #lucky {
+                border: none;
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                color: #5F6368;
+                padding: 8 15;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            #lucky:hover {
+                border: none;
+                background-color: #f4f4f4;
+                color: black;
+                border: 1px solid #c9c9c9;
+                border-radius: 5px;
             }
 
             #language {
+                position: relative;
+                top: 0px;
                 text-align: center;
+                font-size: 13px;
                 text-decoration: none; 
             }
 
@@ -119,18 +185,21 @@
     <body>
         <header>
             <p><a href='' class="top-text">Gmail</a></p>
-            <p><a href='' class="top-text">Images</a></p>
-            <img src="https://cdn.discordapp.com/attachments/440584270763786243/686691841034158130/unknown.png" alt='tab' id="tab">
+            <p><a href='' class="top-text2">Images</a></p>
+            <img src="https://cdn.discordapp.com/attachments/440584270763786243/687054936550539363/unknown.png" alt='tab' id="tab">
             <img src="https://lh3.googleusercontent.com/a-/AOh14Gi6RQw7lpQtkmLVzBIMLoGr93FlT-z_jaMOPFVK=s96-cc-rg" alt="perfil" id="profile">
         </header> 
         <div id="content">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" id="logo">
-            <input type="text" id="search" size="70">
+            <div id="sgroup">
+                <input type="text" id="search" size="67">
+                <img src="https://cdn.discordapp.com/attachments/440584270763786243/687067058332106835/search.png" id="slogo">
+            </div>
             <div id="buttons">
                 <button type="button" id="bsearch">Google Search</button>
                 <button type="button" id="lucky">I'm Feeling Lucky</button>
             </div>
-            <p id="language">Google offerend in: <a href='' id="brasil">Português(Brasil)</a></p>
+            <p id="language">Google offered in: <a href='' id="brasil">Português (Brasil)</a></p>
         </div>
         <footer>
             <div id="tfooter">
